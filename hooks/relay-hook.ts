@@ -24,10 +24,10 @@ async function main() {
   const prompt = input.prompt ?? "";
   if (!prompt) process.exit(0);
 
-  const agentId = process.env.CREW_AGENT_ID;
+  const agentId = process.env.AGENT_ID;
   if (!agentId) process.exit(0);
 
-  const rawKey = process.env.CREW_PRIVATE_KEY;
+  const rawKey = process.env.AGENT_PRIVATE_KEY;
   if (!rawKey) process.exit(0);
 
   const relay = getRelay(agentId);
